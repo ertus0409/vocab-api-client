@@ -7,7 +7,7 @@ var {mongoose} = require('./db/mongoose.js');
 var {Vocab} = require('./models/vocab');
 
 var app = express();
-const port = 3005;
+const port = process.env.PORT;
 
 app.use(bodyParser.json());
 
